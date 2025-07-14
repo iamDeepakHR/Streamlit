@@ -20,11 +20,11 @@ SCALER_PATH = os.path.join(MODEL_DIR, "scaler.pkl")
 
 # ---- GEMINI SETUP (Optional) ----
 # Replace with your Gemini API key
-GEMINI_API_KEY = "YOUR_GEMINI_API_KEY"
+GEMINI_API_KEY = "AIzaSyDGKBuSb5gi7l_OUq0p7tpdyj2S34_6TrM"
 
 if GEMINI_API_KEY:
     genai.configure(api_key=GEMINI_API_KEY)
-    gemini_model = genai.GenerativeModel("gemini-pro")
+    gemini_model = genai.GenerativeModel("gemini-1.5-flash")
 
 # ---- FUNCTIONS ----
 
